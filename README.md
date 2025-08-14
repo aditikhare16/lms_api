@@ -54,50 +54,6 @@ A simple **Leave Management System** for small organizations that allows employe
 |                |        |                |        |   Leaves       |
 +----------------+        +----------------+        +----------------+
 
-Sure! We can add a **more detailed, scalable architecture** showing separation of concerns, potential future enhancements, and external integrations like authentication or caching. Here’s an additional architecture diagram for your README:
-
----
-
-### **Scalable / Extended Architecture**
-
-```
-+----------------+        +----------------+        +----------------+
-|  Employee / HR | <----> |    Backend     | <----> |    Database    |
-|    GUI / Web   |        |  FastAPI +     |        | PostgreSQL /   |
-|  Tkinter / Web |        |   Business     |        | SQLite (MVP)  |
-|  App / React   |        |   Logic + ORM  |        +----------------+
-+----------------+        +----------------+
-                             |
-                             v
-                     +----------------+
-                     |   Caching /    |
-                     |   Redis /      |
-                     |   In-Memory    |
-                     +----------------+
-                             |
-                             v
-                     +----------------+
-                     |  Auth & Roles  |
-                     |  JWT / OAuth2  |
-                     +----------------+
-                             |
-                             v
-                     +----------------+
-                     | External APIs  |
-                     |  (Optional)    |
-                     +----------------+
-```
-
-**Explanation:**
-
-* **Frontend:** Tkinter MVP or future web app.
-* **Backend:** FastAPI handles CRUD, validations, business logic.
-* **Database:** SQLite for MVP, PostgreSQL for production / scaling.
-* **Caching:** Redis to reduce frequent DB reads (e.g., leave balances).
-* **Authentication:** JWT / OAuth2 for secure HR and employee access.
-* **External APIs:** Optional for email notifications, calendar integration, etc.
-
-
 
 ```
 
