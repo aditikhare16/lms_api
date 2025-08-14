@@ -1,7 +1,3 @@
-Got it! I’ve updated the README so the instructions are **generic** for any system, without specific paths. Here’s the revised version:
-
----
-
 # Mini Leave Management System (LMS)
 
 A simple **Leave Management System** for small organizations that allows employees to apply for leaves and HR to manage them. Built using **Python, FastAPI, SQLite, and Tkinter**.
@@ -161,8 +157,4 @@ python gui.py
 * Role-based authentication.
 * Multi-company support.
 
----
 
-If you want, I can **also clean up the commands further** so it’s a **one-liner workflow** to start backend and GUI without repeating activation commands.
-
-Do you want me to do that?
