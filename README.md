@@ -1,3 +1,7 @@
+Got it! I’ve updated the README so the instructions are **generic** for any system, without specific paths. Here’s the revised version:
+
+---
+
 # Mini Leave Management System (LMS)
 
 A simple **Leave Management System** for small organizations that allows employees to apply for leaves and HR to manage them. Built using **Python, FastAPI, SQLite, and Tkinter**.
@@ -53,8 +57,6 @@ A simple **Leave Management System** for small organizations that allows employe
 | Tkinter App    |        |   CRUD & Logic |        |   Employees &  |
 |                |        |                |        |   Leaves       |
 +----------------+        +----------------+        +----------------+
-
-
 ```
 
 ### **Database Design**
@@ -82,15 +84,17 @@ Employee (1) --------> (many) LeaveRequest
 
 ```bash
 git clone <your-repo-url>
-cd lms_api
+cd <repository-folder>
 ```
 
-### **2. Create a virtual environment**
+### **2. Create and activate a virtual environment**
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate       # Linux / Mac
-.venv\Scripts\activate          # Windows
+# Windows
+.venv\Scripts\activate
+# Linux / Mac
+source .venv/bin/activate
 ```
 
 ### **3. Install dependencies**
@@ -99,39 +103,39 @@ source .venv/bin/activate       # Linux / Mac
 pip install -r requirements.txt
 ```
 
-**Dependencies include:**
-
-* fastapi
-* uvicorn
-* sqlalchemy
-* pydantic
-* requests
-
 ---
 
 ### **4. Initialize the database**
 
 ```bash
-python create_db.py
+python app/database.py
 ```
 
-This creates the **employees** and **leaves** tables.
+> This will create the **employees** and **leaves** tables.
 
 ---
 
-### **5. Run the API**
+### **5. Run the backend API**
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Open Swagger UI at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to test APIs.
+* Swagger UI available at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to test APIs.
 
 ---
 
-### **6. Run the GUI**
+### **6. Run the GUI in a separate terminal**
+
+> Open a **new terminal** so that the backend stays running.
 
 ```bash
+cd <repository-folder>
+# Activate virtual environment again if needed
+# Windows
+.venv\Scripts\activate
+# Linux / Mac
+source .venv/bin/activate
 python gui.py
 ```
 
@@ -157,4 +161,8 @@ python gui.py
 * Role-based authentication.
 * Multi-company support.
 
+---
 
+If you want, I can **also clean up the commands further** so it’s a **one-liner workflow** to start backend and GUI without repeating activation commands.
+
+Do you want me to do that?
