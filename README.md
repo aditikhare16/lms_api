@@ -143,7 +143,7 @@ python gui.py
 
 ## **Usage Notes**
 
-* HR API key must match `HR_KEY` in `gui.py` (default: `supersecret123`).
+* HR API key must match `HR_KEY` in `gui.py` (default: `admin123`).
 * Dates must be in **YYYY-MM-DD** format.
 * Weekends are automatically excluded when counting leave days.
 
@@ -156,5 +156,6 @@ python gui.py
 * Email notifications for leave approval/rejection.
 * Role-based authentication.
 * Multi-company support.
+
 
 
