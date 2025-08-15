@@ -3,7 +3,7 @@
 A simple **Leave Management System** for small organizations that allows employees to apply for leaves and HR to manage them. Built using **Python, FastAPI, SQLite, and Tkinter**.
 
 ---
-## **Link to demo video - https://drive.google.com/file/d/1Q-g49Is52Qyov4wK7l-HHM-St6yhge1D/view?usp=sharing **
+## Link to demo video - https://drive.google.com/file/d/1Q-g49Is52Qyov4wK7l-HHM-St6yhge1D/view?usp=sharing 
 
 ## **Features**
 
@@ -157,6 +157,7 @@ python gui.py
 * Email notifications for leave approval/rejection.
 * Role-based authentication.
 * Multi-company support.
+
 
 
 
